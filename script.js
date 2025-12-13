@@ -37,3 +37,31 @@ alterarlayout = () => {
 
 window.addEventListener('resize', alterarlayout);
 window.addEventListener('load', alterarlayout);
+
+
+//function alterarTema() {
+//    let body = document.getElementsByTagName('body')
+//
+//    try {
+//        if (localStorage.getItem('tema') === 'escuro'){
+//        body[0].style.backgroundColor = '#f5f5f5';
+//        localStorage.setItem('tema', 'claro');
+//    } else {
+//        body[0].style.backgroundColor = '#1a1a1a';
+//            localStorage.setItem('tema', 'escuro');}
+//    } catch (e) {
+//        if (e instanceof DOMException && (e.name === 'QuotaExceededError' || e.name === 'NS_ERROR_DOM_QUOTA_REACHED')) {
+//            console.error('Storage cheio');
+//            // tratar: limpar itens antigos, avisar usuário, etc.
+//        } else {
+//            throw e;
+//        }
+//    }
+//
+//    let tema = localStorage.getItem('tema')
+//    if (tema === 'escuro'){
+//        body[0].style.backgroundColor = '#1a1a1a';
+//    } else {
+//        body[0].style.backgroundColor = '#f5f5f5';
+//    }
+//};
