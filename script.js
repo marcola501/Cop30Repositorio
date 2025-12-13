@@ -1,12 +1,15 @@
 alterarlayout = () => {
+    let fotter = document.getElementById('HiddenShow');
     let largura = window.innerWidth;
     let navi = document.getElementsByTagName('nav');
     let divs = document.getElementsByClassName('divisores');
-    if (largura < 769) {
+    if (largura < 769) {//para telas menores que 769px
         navi[0].style.flexDirection = 'column';
         navi[0].style.alignItems = 'center';
         navi[0].style.justifyContent = 'center';
         navi[0].style.gap = '0.5rem';
+        fotter.style.display = 'none';
+        
         for (let i = 0; i < divs.length; i++) {
             divs[i].style.width = '70%';
             divs[i].style.fontSize = '1rem';
@@ -15,7 +18,7 @@ alterarlayout = () => {
             divs[i].style.borderRadius = '13px';
             divs[i].style.transition = 'padding 0.25s ease, transform 0.25s ease';
         }
-    } else {
+    } else {//para telas maiores ou iguais a 769px
         navi[0].style.flexDirection = 'row';
         navi[0].style.alignItems = 'center';
         navi[0].style.justifyContent = 'center';
@@ -28,6 +31,7 @@ alterarlayout = () => {
             divs[i].style.borderRadius = '14px';
             divs[i].style.transition = 'padding 0.25s ease, transform 0.25s ease';
         }
+        fotter.style.display = 'block';
     }
 };
 
