@@ -1,6 +1,7 @@
 alterarlayout = () => {
     let fotter = document.getElementById('HiddenShow');
     let largura = window.innerWidth;
+    
     let navi = document.getElementsByTagName('nav');
     let divs = document.getElementsByClassName('divisores');
     if (largura < 769) {//para telas menores que 769px
