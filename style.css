@@ -5,7 +5,9 @@
 }
 body{
     background-color: #e0e0e0;
-    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 header{ 
     display: block;
@@ -20,8 +22,7 @@ header{
 
 }
 footer{
-    position: fixed;
-    bottom: 0;
+    display: flex;
     width: 100%;
     background-color: #5ca55c;
     color: white;
@@ -86,4 +87,13 @@ div a:hover{
     background-size: 80%;
     background-repeat: no-repeat;
     background-position: center;
+}
+.grama-fundo{
+    background-image: url(imagens/grama-removebg-preview.png);
+    background-repeat: repeat-x;
+    background-size: 160px auto;
+    background-position: center bottom;
+    width: 100%;
+    min-height: 300px;
+    flex: 1 0 auto;
 }
