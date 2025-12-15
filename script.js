@@ -1,7 +1,7 @@
 alterarlayout = () => {
     let fotter = document.getElementById('HiddenShow');
     let largura = window.innerWidth;
-    
+    let grama = document.getElementsByClassName("grama-fundo")
     let navi = document.getElementsByTagName('nav');
     let divs = document.getElementsByClassName('divisores');
     if (largura < 769) {//para telas menores que 769px
@@ -11,6 +11,8 @@ alterarlayout = () => {
         navi[0].style.gap = '0.5rem';
         fotter.style.display = 'none';
         
+        grama[0].style.display = 'none'
+
         for (let i = 0; i < divs.length; i++) {
             divs[i].style.width = '70%';
             divs[i].style.fontSize = '1rem';
