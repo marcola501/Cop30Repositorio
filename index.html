@@ -3,22 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demarcação indigena</title>
+    <title>COP30 e Demarcação Indígena</title>
     <link rel="icon" href="imagens/cocar.ico" sizes="32x32" type="image/x-icon">
-    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header id="apresentacao"><h1>Bem-vindo</h1><h2> ao trabalho da cop30 e dermação indigena</h2>
-    <p><strong>projeto integrador do IFS-campus Propriá</strong></p>
+    <header class="hero">
+        <div class="hero__content">
+            <span class="tag">Projeto integrador do IFS - Campus Propriá</span>
+            <h1>COP30 e Demarcação Indígena</h1>
+            <p>Explore a importância da COP30, a defesa dos territórios indígenas e o impacto cultural que conecta o presente ao futuro.</p>
+            <div class="hero__actions">
+                <a class="btn btn--primary" href="conteudos/cop30.html">Conheça a COP30</a>
+                <a class="btn btn--ghost" href="conteudos/demarcacao.html">Demarcação indígena</a>
+            </div>
+        </div>
+        <div class="hero__media" role="img" aria-label="Floresta e povos indígenas"></div>
     </header>
-    <nav id="links">
-        <div class="divisores" id="cop30">
-        <a href="conteudos/cop30.html">cop30</a></div>
-        <div class="divisores" id="demarcacao"><a href="conteudos/demarcacao.html">Demarcação</a></div>
-        <div class="divisores" id="sobre"><a href="conteudos/sobre.html">Sobre nós</a></div>
-    </nav>
-    <div class="grama-fundo"></div>
-    <footer id="HiddenShow">O projeto “Cineclube: Cocar do Futuro” promove a reflexão sobre cultura, história e direitos indígenas por meio do cinema. Realizado em Propriá (SE) e arredores, o projeto utiliza oficinas, debates e exibições de filmes para desenvolver a interpretação crítica e conscientizar a comunidade sobre as demandas dos povos indígenas, com foco especial nas comunidades de Sergipe.</footer>
-</body> 
+
+    <main>
+        <nav class="cards" aria-label="Navegação principal">
+            <a class="card card--cop30" href="conteudos/cop30.html">
+                <span class="card__title">COP30</span>
+                <p>Entenda o encontro global que discute soluções climáticas.</p>
+            </a>
+            <a class="card card--demarcacao" href="conteudos/demarcacao.html">
+                <span class="card__title">Demarcação</span>
+                <p>Conheça a luta pelos direitos territoriais e culturais.</p>
+            </a>
+            <a class="card card--sobre" href="conteudos/sobre.html">
+                <span class="card__title">Sobre nós</span>
+                <p>Saiba mais sobre o projeto e quem participa dessa iniciativa.</p>
+            </a>
+        </nav>
+
+        <section class="info">
+            <div>
+                <h2>Cineclube: Cocar do Futuro</h2>
+                <p>O projeto promove a reflexão sobre cultura, história e direitos indígenas por meio do cinema em Propriá (SE) e arredores.</p>
+                <p>Com oficinas, debates e exibições de filmes, desenvolvemos interpretação crítica e conscientizamos a comunidade sobre as demandas dos povos indígenas, com foco especial nas comunidades de Sergipe.</p>
+            </div>
+            <ul class="info__highlights">
+                <li>Exibições comentadas e rodas de conversa.</li>
+                <li>Oficinas de interpretação crítica audiovisual.</li>
+                <li>Conexão entre juventude, cultura e território.</li>
+            </ul>
+        </section>
+    </main>
+
+    <div class="grama-fundo" aria-hidden="true"></div>
+
+    <footer>
+        <span>Projeto integrador do IFS - Campus Propriá • Cultura, história e direitos indígenas.</span>
+    </footer>
+</body>
 </html>
